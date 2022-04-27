@@ -10,12 +10,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.main-section {
-    width: 100%;
-    height: 85vh;
-    background-color: #000000;
-}
-
 
 /*------*/
 /* Flex */
@@ -29,12 +23,22 @@
     flex-grow: grow;
 }
 
+.row {
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
 .col-14 {
-    flex-basis: calc(100% / 7);
+    flex-basis: calc(100% / 7 - 5px);
+    height: 15vh;
 }
 
 .col-33 {
     flex-basis: 33.3333%;
+}
+
+.h-align {
+    justify-content: center;
 }
 
 .v-align {
@@ -103,8 +107,30 @@ p {
 /*--------------*/
 
 .main-section {
+    width: 100%;
+    height: 85vh;
+    background-color: #000000;
+}
+
+.main-section {
     padding: 20px 50px;
-    border: 1px solid red;
+}
+
+.user-card {
+    width: 100%;
+    height: 15vh;
+    background-image: url('https://picsum.photos/400/300');
+    background-size: cover;
+    position: relative;
+}
+
+.user-card-name {
+    background-color: rgba(69, 69, 69, 0.394);
+    backdrop-filter: blur(5px);
+    padding: 5px 10px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -139,6 +165,10 @@ p {
 .bottom-btn-icon {
     font-size: 30px;
     padding: 0 10px;
+}
+
+#green-icon {
+    color: #4BC800;
 }
 
 .bottom-btn-text {

@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+    <!-- Top bar -->
+    <div class="top-bar flex">
+        <div class="top-btn-wrapper">
+            <a href="#" class="top-btn"><i class="fa-solid fa-table-cells"></i>Speaker View</a>
+            <a href="#" class="top-btn"><i class="fa-solid fa-maximize"></i></a>
+        </div>
+    </div>
+
+    <!-- Main section -->
+    <div class="main-section">
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar flex grow">
+
+        <!-- Left column -->
+        <div class="col-33 flex v-align">
+
+            <!-- Mute button -->
+            <a href="#" class="bottom-btn flex">
+                <div class="bottom-btn-col-large">
+                    <div class="bottom-btn-icon"><i class="fa-solid fa-microphone"></i></div>
+                    <div class="bottom-btn-text">Mute</div>
+                </div>
+                <div class="bottom-btn-col-small flex v-align">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </a>
+
+            <!-- Stop video button -->
+            <a href="#" class="bottom-btn flex">
+                <div class="bottom-btn-col-large">
+                    <div class="bottom-btn-icon"><i class="fa-solid fa-video"></i></div>
+                    <div class="bottom-btn-text">Stop Video</div>
+                </div>
+                <div class="bottom-btn-col-small flex v-align">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Centered column -->
+        <div class="col-33">
+
+        </div>
+
+        <!-- Right column -->
+        <div class="col-33 flex">
+            <a href="#" class="end-meeting-btn">End meeting</a>
+        </div>
+
+
+    </div>
+
 </body>
 </html>

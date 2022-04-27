@@ -29,12 +29,12 @@
     flex-grow: grow;
 }
 
-.col-33 {
-    flex-basis: 33.3333%;
-}
-
 .col-14 {
     flex-basis: calc(100% / 7);
+}
+
+.col-33 {
+    flex-basis: 33.3333%;
 }
 
 .v-align {
@@ -98,6 +98,16 @@ p {
 }
 
 
+/*--------------*/
+/* Main section */
+/*--------------*/
+
+.main-section {
+    padding: 20px 50px;
+    border: 1px solid red;
+}
+
+
 /*------------*/
 /* Bottom Bar */
 /*------------*/
@@ -121,13 +131,14 @@ p {
 }
 
 .bottom-btn-col-large {
-    min-width: 60px;
+    min-width: 30px;
     text-align: center;
     width: max-content;
 }
 
 .bottom-btn-icon {
     font-size: 30px;
+    padding: 0 10px;
 }
 
 .bottom-btn-text {
@@ -135,8 +146,8 @@ p {
 }
 
 .bottom-btn-col-small {
-    flex-basis: 20px;
-    text-align: center;
+    min-width: 20px;
+    padding: 0 5px;
 }
 
 .bottom-bar .col-33:last-child {
